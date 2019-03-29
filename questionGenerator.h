@@ -5,8 +5,8 @@ struct question{
     int opperand1;
     int opperand2;
     int op;
-}
+};
 
-generateQuestions(int difficulty, struct question questions[], numQuestions);
+int generateQuestions(int difficulty, struct question questions[], int numQuestions);
 
 #endif
