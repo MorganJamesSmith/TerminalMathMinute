@@ -1,6 +1,6 @@
 #ifndef TIMER
 #define TIMER
 
-void startTimer(void (*during_timer), void (*after_timer), int timer_length);
+void startTimer(void (*during_timer), void (*at_timer)(int), int timer_length);
 
 #endif
