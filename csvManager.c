@@ -15,7 +15,8 @@ void save_results(struct save_data data_to_save){
 
   fp = fopen(FILENAME, MODE);
 
-  fprintf(fp, "\n%2d, %d, %s", data_to_save.percent_correct, data_to_save.time_per_question, data_to_save.current_time);
+  fprintf(fp, "\n%2f, %d, %f", data_to_save.percent_correct, data_to_save.time_per_question, data_to_save.current_time);
+  fclose(fp);
 }
 
 
